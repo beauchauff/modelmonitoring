@@ -31,6 +31,7 @@ This second container reads the logs from the shared volume to show
 - Implementation Alert showing when calculated accuracy drops below 80%
 
 Functionality includes an evaluate script, located in the root directory.
-This uses the Python requests library to run a test script to test and log 
-movie reviews for analysis.
+Running this script uses Python requests library to run a test script to test and log 
+movie reviews for analysis. Script loops through a provided json file with review text to analyze and
+a user given sentiment to be logged for app performance with the streamlit app.
 
