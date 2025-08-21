@@ -37,7 +37,7 @@ def health_check():
     """
     return {"status": "ok", "message": "API is running"}
 
-@app.post("/api")
+@app.post("/predict")
 def predict(input_data: PredictionInput):
     """
     Prediction Endpoint

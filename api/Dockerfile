@@ -13,9 +13,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application's code into the container at /app
 COPY . /app
 
-# Make port 8501 available to the world outside this container
-EXPOSE 8501
+# Make port 8000 for fastapi  available to the world outside this container
+EXPOSE 8000
+#make sure TO CHANGE 8000:8000 on the Makefile
 
 # Define the command to run your app when the container starts
-CMD ["streamlit", "run", "app.py"]
-#CMD ["uvicorn", "main:app"]
+#CMD ["streamlit", "run", "app.py"]
+CMD ["uvicorn", "main:app", "--reload"]
