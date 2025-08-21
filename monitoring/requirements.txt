@@ -2,3 +2,5 @@ streamlit
 scikit-learn
 plotly
 pandas
+json
+os
